@@ -6,7 +6,7 @@
         {
             "label": "run",
             "type": "shell",
-            "command": "clang++ -g -o build/${fileBasenameNoExtension} ${file} && build/${fileBasenameNoExtension}",
+            "command": "clang++ -g -std=c++17 -Wall -pedantic -Wextra -o build/${fileBasenameNoExtension} ${file} && build/${fileBasenameNoExtension}",
             "problemMatcher": [
                 "$gcc"
             ],
